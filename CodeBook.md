@@ -2,7 +2,7 @@
 ### Data
 Data is downloaded from the website "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip", and the original infomation is in the 'UCI HAR Dataset' file
 ### Variables
-In the final result.txt file, there're 198 observations and 4 Variables. Details are as follows  
+In the final result.txt file, there're 198 observations and 5 Variables. The format of this tidy dataset is "long". More details are as follows  
 * activity  
 This variable is the activity label of different observations, and it has 6 values:  
 
@@ -61,3 +61,4 @@ This shows the average standard deviation for each activity, each measurement an
 ### Notes
   - Features are normalized and bounded within [-1,1].
   - Each feature vector is a row on the text file.
+  - My final tidy dataset is in "long" format.
