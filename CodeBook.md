@@ -5,32 +5,33 @@ Data is downloaded from the website "https://d396qusza40orc.cloudfront.net/getda
 In the final result.txt file, there're 198 observations and 4 Variables. Details are as follows  
 * activity  
 This variable is the activity label of different observations, and it has 6 values:  
-  >walking  
-  walking_upstairs  
-  walking_downstairs  
-  sitting  
-  standing  
-  laying  
+
+  >'walking'  
+  'walking_upstairs'  
+  'walking_downstairs'  
+  'sitting'  
+  'standing'  
+  'laying'  
 
 * measurement  
 This shows which measurement this row's value takes, and it has 33 values:  
 
-  > tGravityAcc-XYZ  
-  tBodyAccJerk-XYZ  
-  tBodyGyro-XYZ  
-  tBodyGyroJerk-XYZ  
-  tBodyAccMag  
-  tGravityAccMag  
-  tBodyAccJerkMag  
-  tBodyGyroMag  
-  tBodyGyroJerkMag  
-  fBodyAcc-XYZ  
-  fBodyAccJerk-XYZ  
-  fBodyGyro-XYZ  
-  fBodyAccMag  
-  fBodyAccJerkMag  
-  fBodyGyroMag  
-  fBodyGyroJerkMag  
+  > 'tGravityAcc'  
+  'tBodyAccJerk'  
+  'tBodyGyro'
+  'tBodyGyroJerk'  
+  'tBodyAccMag'  
+  'tGravityAccMag'  
+  'tBodyAccJerkMag'  
+  'tBodyGyroMag'  
+  'tBodyGyroJerkMag'  
+  'fBodyAcc'  
+  'fBodyAccJerk'
+  'fBodyGyro'  
+  'fBodyAccMag'  
+  'fBodyAccJerkMag'  
+  'fBodyGyroMag'  
+  'fBodyGyroJerkMag'  
 
   Attention:  
   -XYZ is used to denote 3-axial signals in the X, Y and Z directions. Each has three sub-values, -X, -Y, -Z.  
@@ -42,11 +43,20 @@ This shows which measurement this row's value takes, and it has 33 values:
 
   Finally a Fast Fourier Transform (FFT) was applied to some of these signals producing fBodyAcc-XYZ, fBodyAccJerk-XYZ, fBodyGyro-XYZ, fBodyAccJerkMag, fBodyGyroMag, fBodyGyroJerkMag. (Note the 'f' to indicate frequency domain signals).
 
-* mean  
-This shows the mean for each activity and each measurement.  
+* subject  
+This variable shows the direction of the measurement's value, it has four values:  
+  >'X' -X direction  
+  'Y' -Y direction  
+  'Z' -Z direction  
+  ' ' -Euclidean norm  
 
-* standardDeviation  
-This shows the standard deviation for each activity and each measurement.
+  Note: ' ' means missing
+
+* averagemean  
+This shows the average mean for each activity, each measurement and each subject.  
+
+* averagestd  
+This shows the average standard deviation for each activity, each measurement and each subject.
 
 ### Notes
   - Features are normalized and bounded within [-1,1].
