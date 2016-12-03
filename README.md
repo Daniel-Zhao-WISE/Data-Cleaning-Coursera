@@ -3,11 +3,11 @@
 This repo consits of following files  
   > - 'REAME.md'
   > - 'CodeBook.md': Code Book of variables in final tidy dataset.  
-  > - 'result.txt': Final tidy dataset.
+  > - 'result.txt': Final tidy dataset with 5940 (30\*33\*6) observations and 5 variables.
   > - 'run_analysis.R': R scirpt consits manipulation from the data downloaded, to the final tidy dataset.
 
 ### run_analysis.R
-This script is used to generate tidy data the average value for each activity, each measurement, and each subject. (I think the subject  means that which direction, X, Y, Z or missing). It takes following steps:  
+This script is used to generate tidy data the average value for each activity, each measurement, and each subject. It takes following steps:  
 
 1. Download and unzip the file.  
 2. Read the data from test and train, in addition, merge them into one total data set.  

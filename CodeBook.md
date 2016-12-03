@@ -3,12 +3,12 @@
 Data is downloaded from the website "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip", and the original infomation is in the 'UCI HAR Dataset' file
 ### Variables
 In the final result.txt file, there're 198 observations and 5 Variables. The format of this tidy dataset is "long". More details are as follows  
+
 * activity  
 This variable is the activity label of different observations, and it has 6 values:  
-
-  >'walking'  
-  'walking_upstairs'  
-  'walking_downstairs'  
+ 	>'walking'  
+   'walking\_upstairs'  
+  'walking\_downstairs'  
   'sitting'  
   'standing'  
   'laying'  
@@ -16,27 +16,27 @@ This variable is the activity label of different observations, and it has 6 valu
 * measurement  
 This shows which measurement this row's value takes, and it has 33 values:  
 
-  > 'tGravityAcc'  
-  'tBodyAccJerk'  
-  'tBodyGyro'
-  'tBodyGyroJerk'  
+  	> 'tGravityAcc-XYZ'  
+  'tBodyAccJerk-XYZ'  
+  'tBodyGyro-XYZ'
+  'tBodyGyroJerk-XYZ'  
   'tBodyAccMag'  
   'tGravityAccMag'  
   'tBodyAccJerkMag'  
   'tBodyGyroMag'  
   'tBodyGyroJerkMag'  
-  'fBodyAcc'  
-  'fBodyAccJerk'
-  'fBodyGyro'  
+  'fBodyAcc-XYZ'  
+  'fBodyAccJerk-XYZ'
+  'fBodyGyro-XYZ'  
   'fBodyAccMag'  
   'fBodyAccJerkMag'  
   'fBodyGyroMag'  
   'fBodyGyroJerkMag'  
 
-  Attention:  
+  	Attention:  
   -XYZ is used to denote 3-axial signals in the X, Y and Z directions. Each has three sub-values, -X, -Y, -Z.  
 
-  Explanations:  
+  	Explanations:  
   The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ. These time domain signals (prefix 't' to denote time) were captured at a constant rate of 50 Hz. Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. Similarly, the acceleration signal was then separated into body and gravity acceleration signals (tBodyAcc-XYZ and tGravityAcc-XYZ) using another low pass Butterworth filter with a corner frequency of 0.3 Hz.  
 
   Subsequently, the body linear acceleration and angular velocity were derived in time to obtain Jerk signals (tBodyAccJerk-XYZ and tBodyGyroJerk-XYZ). Also the magnitude of these three-dimensional signals were calculated using the Euclidean norm (tBodyAccMag, tGravityAccMag, tBodyAccJerkMag, tBodyGyroMag, tBodyGyroJerkMag).
@@ -44,13 +44,12 @@ This shows which measurement this row's value takes, and it has 33 values:
   Finally a Fast Fourier Transform (FFT) was applied to some of these signals producing fBodyAcc-XYZ, fBodyAccJerk-XYZ, fBodyGyro-XYZ, fBodyAccJerkMag, fBodyGyroMag, fBodyGyroJerkMag. (Note the 'f' to indicate frequency domain signals).
 
 * subject  
-This variable shows the direction of the measurement's value, it has four values:  
-  >'X' -X direction  
-  'Y' -Y direction  
-  'Z' -Z direction  
-  ' ' -Euclidean norm  
+This variable shows the subject who performed the activity for each window sample. Its range is from 1 to 30.
+  	>1 - subject 1  
+  	>2 - subject 2  
+  	>...  
+  	>30 - subject 30
 
-  Note: ' ' means missing
 
 * averagemean  
 This shows the average mean for each activity, each measurement and each subject.  
